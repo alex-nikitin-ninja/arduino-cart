@@ -40,7 +40,8 @@ void loop() {
         if (charRead == ';') {
             commandString = parseCommand(commandString);
             executeCart();
-            Serial.print("Status: " + String(C.motor) + "; " + String(C.wheel) + "\n");
+            // Serial.print("Status: " + String(C.motor) + "; " + String(C.wheel) + "\n");
+            Serial.print("OK");
         }
     }
 }
