@@ -15,12 +15,12 @@ struct Cart {
     int wheel;
 };
 
-Motor M = {6, 7, 5};
+Motor M = { 6, 7, 5 };
 
 int servoPin = 3;
 Servo Servo;
 
-Cart C = {0, 68};
+Cart C = { 0, 68 };
 
 char charRead;
 String commandString;
@@ -93,4 +93,3 @@ void moveCart(Motor m, int pwm) {
     }
     analogWrite(m.enable, abs(pwm));
 }
-
