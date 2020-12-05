@@ -15,9 +15,10 @@ struct Cart {
     int wheel;
 };
 
-Motor M = { 6, 7, 5 };
+Motor M = { 5, 6, 3 };
+// Motor M = { 7, 8, 11 };
 
-int servoPin = 3;
+int servoPin = 9;
 Servo Servo;
 
 Cart C = { 0, 68 };
