@@ -1,6 +1,7 @@
 // stty -F /dev/ttyUSB0 cs8 9600 ignbrk -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok -echoctl -echoke noflsh -ixon -crtscts
 // echo "$(cat packet.txt)" > /dev/ttyUSB0
 // cat -n /dev/ttyUSB0
+// cp /home/pi/.arduino15/preferences-nano.txt /home/pi/.arduino15/preferences.txt && ~/projects/arduino-1.8.13/arduino --upload /home/pi/projects/arduino-cart/cart.ino --port /dev/ttyUSB0
 
 #include <Servo.h>
 
