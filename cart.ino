@@ -15,21 +15,23 @@ struct Cart {
     int wheel;
 };
 
-Motor M = { 5, 6, 3 };
-// Motor M = { 7, 8, 11 };
+Motor M1 = { 5, 6, 3 };
+Motor M2 = { 7, 8, 11 };
 
 int servoPin = 9;
 Servo Servo;
 
-Cart C = { 0, 68 };
+Cart C = { 0, 83 };
 
 char charRead;
 String commandString;
 
 void setup() {
     Servo.attach(servoPin);
-    pinMode(M.in1, OUTPUT);
-    pinMode(M.in2, OUTPUT);
+    pinMode(M1.in1, OUTPUT);
+    pinMode(M1.in2, OUTPUT);
+    pinMode(M2.in1, OUTPUT);
+    pinMode(M2.in2, OUTPUT);
     Serial.begin(9600);
 }
 
@@ -80,7 +82,8 @@ String parseCommand(String command) {
 }
 
 void executeCart() {
-    moveCart(M, C.motor);
+    moveCart(M1, C.motor);
+    moveCart(M2, C.motor);
     Servo.write(C.wheel);
 }
 

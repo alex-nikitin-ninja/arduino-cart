@@ -8,4 +8,4 @@ echo "Press [CTRL+C] to stop.."
 # 	sleep 0.25
 # done
 
-php sender.php
+php sender-receiver.php
