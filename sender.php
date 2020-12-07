@@ -50,7 +50,7 @@ while (1) {
 	}
 
 	// wait for X seconds
-	usleep(0.1 * 1000 * 1000);
+	usleep(0.05 * 1000 * 1000);
 }
 
 fclose($fp);
